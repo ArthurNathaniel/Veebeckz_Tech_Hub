@@ -13,10 +13,10 @@
     </a>
     <div class="nav_links">
         <a href="index.php">Home</a>
-        <a href="">About Us</a>
-        <a href="">Subsidiaries</a>
-        <a href="">Services</a>
-        <a href="">Blog</a>
+        <a href="about.php">About Us</a>
+        <a href="subsidiaries.php">Subsidiaries</a>
+        <a href="services.php">Services</a>
+        <a href="blog.php">Blog</a>
         <a href="">Careers</a>
         <a href="">Contact Us</a>
 
@@ -28,7 +28,7 @@
     </button>
     <div class="mobile">
         <a href="index.php">Home</a>
-        <a href="">About Us</a>
+        <a href="about.php">About Us</a>
         <a href="">Subsidiaries</a>
         <a href="">Services</a>
         <a href="">Blog</a>

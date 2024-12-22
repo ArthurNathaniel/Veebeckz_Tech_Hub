@@ -1,0 +1,27 @@
+.about_all{
+    padding: 0 10%;
+}
+.about_heading{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about_all p{
+    margin-top: 15px;
+}
+
+.about_all li{
+    margin-top: 15px;
+}
+
+
+
+.about_heading h1{
+    color: #c28103;
+font-size: 35px;
+}
+
+.about_heading h2{
+    color: #c28103;
+font-size: 35px;
+}
