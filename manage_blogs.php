@@ -36,13 +36,14 @@ $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Blogs</title>
+    <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
+    <?php include 'sidebar.php'; ?>
 
-    <section>
+    <section class="manage_blogs_all">
         <h1>Manage Blogs</h1>
 
         <?php if (isset($_GET['success'])): ?>
@@ -74,6 +75,6 @@ $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </table>
     </section>
 
-    <?php include 'footer.php'; ?>
+ 
 </body>
 </html>

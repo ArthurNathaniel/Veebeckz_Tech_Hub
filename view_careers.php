@@ -23,7 +23,7 @@ $careers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <?php include 'navbar.php'; ?>
+    <?php include 'sidebar.php'; ?>
 
     <section>
         <div class="container careers">
@@ -63,7 +63,7 @@ $careers = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </section>
 
-    <?php include 'footer.php'; ?>
+
 </body>
 
 </html>

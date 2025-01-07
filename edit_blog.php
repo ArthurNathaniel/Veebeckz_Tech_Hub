@@ -47,44 +47,61 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Blog</title>
     <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+    <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
     <style>
         #editor-container {
             height: 300px;
         }
     </style>
 </head>
-<body>
-    <?php include 'navbar.php'; ?>
 
-    <section>
+<body>
+    <?php include 'sidebar.php'; ?>
+
+    <section class="manage_blogs_all">
         <h1>Edit Blog</h1>
 
         <form action="" method="post" enctype="multipart/form-data">
-            <label for="title">Title:</label>
-            <input type="text" name="title" id="title" value="<?php echo htmlspecialchars($blog['title']); ?>" required>
+            <div class="forms">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" value="<?php echo htmlspecialchars($blog['title']); ?>" required>
+            </div>
 
-            <label for="image">Image:</label>
-            <input type="file" name="image" id="image">
-            <p>Current Image: <img src="<?php echo $blog['image']; ?>" alt="Current Blog Image" width="100"></p>
+            <div class="forms">
+                <label for="image">Image:</label>
+                <input type="file" name="image" id="image">
+            </div>
+            <div class="forms">
+                <p>Current Image:
+                    <br> <img src="<?php echo $blog['image']; ?>" alt="Current Blog Image" width="100">
+                </p>
 
-            <label for="date">Date:</label>
-            <input type="date" name="date" id="date" value="<?php echo $blog['date']; ?>" required>
+            </div>
+            <div class="forms">
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" value="<?php echo $blog['date']; ?>" required>
+            </div>
 
-            <label for="content">Content:</label>
-            <div id="editor-container"><?php echo htmlspecialchars($blog['content']); ?></div>
-            <textarea name="content" id="content" style="display: none;"></textarea>
+            <div class="forms">
+                <label for="content">Content:</label>
+                <div id="editor-container"><?php echo htmlspecialchars($blog['content']); ?></div>
+                <textarea name="content" id="content" style="display: none;"></textarea>
+            </div>
 
-            <button type="submit">Update Blog</button>
+            <div class="forms">
+                <button type="submit">Update Blog</button>
+            </div>
         </form>
     </section>
 
-    <?php include 'footer.php'; ?>
 
     <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
     <script>
@@ -102,4 +119,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         };
     </script>
 </body>
+
 </html>

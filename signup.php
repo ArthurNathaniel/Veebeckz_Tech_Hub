@@ -73,17 +73,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <form action="signup.php" method="POST">
     <div class="forms">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" placeholder="Enter your full name" id="name" name="name" required>
     </div>
 
     <div class="forms">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" placeholder="Enter your email address" id="email" name="email" required>
     </div>
     <div class="forms">
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" placeholder="Enter your password" id="password" name="password" required>
     </div>
 
     <div class="forms">

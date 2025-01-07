@@ -158,6 +158,7 @@ h6 {
     width: 100%;
     border: 2px solid #ddd;
     border-radius: 5px;
+    padding-left: 3%;
 }
 .forms select{
     height: 44px;
@@ -267,10 +268,119 @@ table{
 }
 
  th {
-    background-color: #f2f2f2;
+    background-color: #C28103;
+    color: #fff;
 }
 
-
+.logo_name {
+    padding-block: 25px;
+    /* border: 2px dashed #336aea; */
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .logo_name span {
+    color: #C28103;
+  }
+  .logout {
+    border: 2px solid #C28103;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #C28103;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+  }
+  
+  .links i {
+    color: #C28103;
+    padding-right: 3%;
+  }
+  
+  .links a.active {
+    color: #C28103;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    background-color: #fff;
+    width: 280px;
+    padding: 0 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      z-index: 850;
+  }
+  
+  .sidebar.hidden {
+    transform: translateX(0);
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 35px;
+    overflow-y: auto;
+    height: 60vh;
+    scrollbar-width: thin;
+    scrollbar-color: #C28103 #ecf0f1;
+  }
+  
+  /* For Chrome, Edge, and Safari */
+  .links::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .links::-webkit-scrollbar-track {
+    background: #ecf0f1; /* Light gray track */
+    border-radius: 10px; /* Rounded track */
+  }
+  
+  .links::-webkit-scrollbar-thumb {
+    background-color: #C28103; /* Green thumb */
+    border-radius: 10px; /* Rounded thumb */
+    border: 2px solid #ecf0f1; /* Adds padding effect */
+  }
+  
+  .links::-webkit-scrollbar-thumb:hover {
+    background-color: #C28103; /* Darker green on hover */
+  }
+  
+  .links a {
+    padding-block: 10px;
+    color: #000;
+  }
+  
+  .dashed {
+    border-top: 2px dashed #C28103;
+  }
+  
+  .toggle_btn {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #C28103;
+    color: #ecf0f1;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 851;
+  
+    transition: left 0.7s ease-in-out;
+  }
+  .toggle_btn.collapsed {
+    left: 252px;
+  }
+  
 
 @media only screen and (max-width: 1110px) {
     #toggleButton {

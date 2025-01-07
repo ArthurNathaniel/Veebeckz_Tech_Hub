@@ -36,57 +36,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Blog</title>
-    <?php include 'cdn.php'; ?>
     <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
+    <?php include 'cdn.php'; ?>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
     <style>
-        form {
-            max-width: 600px;
-            margin: auto;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input, button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-        }
+  
         #editor-container {
             height: 200px;
         }
     </style>
 </head>
 <body>
+<?php include 'sidebar.php'; ?>
+
+<section class="manage_blogs_all">
     <h1 style="text-align: center;">Add Blog</h1>
     <form method="POST" enctype="multipart/form-data">
-        <div class="form-group">
+        <div class="forms">
             <label for="title">Blog Title</label>
             <input type="text" id="title" name="title" required>
         </div>
 
-        <div class="form-group">
+        <div class="forms">
             <label for="image">Blog Image</label>
             <input type="file" id="image" name="image" accept="image/*" required>
         </div>
 
-        <div class="form-group">
+        <div class="forms">
             <label for="date">Date</label>
             <input type="date" id="date" name="date" required>
         </div>
 
-        <div class="form-group">
+        <div class="forms">
             <label for="content">Blog Content</label>
             <div id="editor-container"></div>
             <textarea name="content" id="content" style="display:none;"></textarea>
         </div>
 
-        <button type="submit">Add Blog</button>
+      <div class="forms">
+      <button type="submit">Add Blog</button>
+      </div>
     </form>
-
+</section>
     <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
     <script>
         const quill = new Quill('#editor-container', {

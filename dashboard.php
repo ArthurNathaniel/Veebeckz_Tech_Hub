@@ -6,7 +6,19 @@ if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');
     exit;
 }
-
-echo '<h1>Welcome, ' . htmlspecialchars($_SESSION['name']) . '!</h1>';
-echo '<p><a href="logout.php">Logout</a></p>';
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <?php include 'cdn.php' ?>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    <?php include 'sidebar.php';?>
+    <h1>Welcome, <?php echo htmlspecialchars($_SESSION['name']); ?>!</h1>
+    <p><a href="logout.php">Logout</a></p>
+</body>
+</html>

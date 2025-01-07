@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['name'] = $user['name'];
 
                 // Redirect to a dashboard or welcome page
-                header('Location: dashboard.php');
+                header('Location: add_blog.php');
                 exit;
             } else {
                 $error = 'Invalid email or password.';
@@ -63,12 +63,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form action="login.php" method="POST">
                 <div class="forms">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" placeholder="Enter your email address" id="email" name="email" required>
                 </div>
                 <div class="forms">
 
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" placeholder="Enter your password" id="password" name="password" required>
                 </div>
 
                 <div class="forms">

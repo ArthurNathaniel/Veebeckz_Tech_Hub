@@ -23,3 +23,25 @@ body {
     padding-block: 50px;
     width: 100%;
 }
+
+@media only screen and (max-width: 1110px) {
+    .signup_all{
+        padding: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }  
+}
+
+@media only screen and (max-width: 810px) {
+    .signup_all{
+        padding: 0 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }  
+}

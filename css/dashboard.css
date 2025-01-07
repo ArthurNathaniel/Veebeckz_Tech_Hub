@@ -1,0 +1,19 @@
+.manage_blogs_all{
+    padding: 0 20%;
+    margin-block: 50px;
+}
+
+@media only screen and (max-width: 1110px) {
+    .manage_blogs_all{
+        padding: 0 10%;
+        margin-block: 50px;
+    }  
+}
+
+
+@media only screen and (max-width: 810px) {
+    .manage_blogs_all{
+        padding: 0 3%;
+        margin-block: 50px;
+    }  
+}
