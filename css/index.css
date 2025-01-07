@@ -162,7 +162,15 @@
     color: #666;
 }
 
-
+.blog-cards{
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.blog-card {
+ color: #000; 
+}
 @media only screen and (max-width: 1110px) {
   .hero_text {
     padding: 0 5%;
@@ -189,6 +197,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  
+.blog-cards{
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 }
 
 
@@ -197,6 +213,13 @@
     display: grid;
     grid-template-columns: 1fr;
 
+}
+
+.blog-cards{
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 30px;
 }
 
 }

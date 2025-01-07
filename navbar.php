@@ -1,6 +1,6 @@
 <div class="header_all">
     <div class="motto">
-        <p>Good Foundation</p>
+        <p>Technology at it convenience</p>
     </div>
     <div class="social_media">
         <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -17,8 +17,8 @@
         <a href="subsidiaries.php">Subsidiaries</a>
         <a href="services.php">Services</a>
         <a href="blog.php">Blog</a>
-        <a href="">Careers</a>
-        <a href="">Contact Us</a>
+        <a href="career.php">Careers</a>
+        <a href="contact.php">Contact Us</a>
 
     </div>
 
@@ -29,11 +29,11 @@
     <div class="mobile">
         <a href="index.php">Home</a>
         <a href="about.php">About Us</a>
-        <a href="">Subsidiaries</a>
-        <a href="">Services</a>
-        <a href="">Blog</a>
-        <a href="">Careers</a>
-        <a href="">Contact Us</a>
+        <a href="subsidiaries.php">Subsidiaries</a>
+        <a href="services.php">Services</a>
+        <a href="blog.php">Blog</a>
+        <a href="career.php">Careers</a>
+        <a href="contact.php">Contact Us</a>
     </div>
 </div>
 
